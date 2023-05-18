@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <string.h>
+
+int main()
+{
+	int k, i, re;
+	char ar[21];
+	scanf("%d %s", &k, &ar);
+
+	for (i = 0; i < strlen(ar); i++)
+	{
+		re = ar[i] - (3 * (i + 1) + k);
+		if(re < 65)
+			printf("%c",91 - (65 - re));
+		else
+			printf("%c",re);
+	}
+}
