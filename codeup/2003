@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main()
+{
+		 char bs[3][3] = {
+			{'*', 'x', '*'},
+			{' ', 'x', 'x'},
+			{'*', ' ','*'}
+		};
+		int n, i, j, cnt, row = 0;
+		scanf("%d", &n);
+
+
+		for (i = 0; i < 3 * n; i++)
+		{
+			row = i / n;
+			for (j = 0; j < 3; j++)
+			{
+				for (cnt = 0; cnt < n; cnt++)
+					printf("%c", bs[row][j]);
+			}
+			printf("\n");
+		}
+}
