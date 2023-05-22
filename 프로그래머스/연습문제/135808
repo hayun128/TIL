@@ -1,0 +1,38 @@
+과일장수
+import java.util.Arrays;
+
+class Solution {
+    public int solution(int k, int m, int[] score) {
+        int answer = 0;
+        int i, j, tmp = m;
+        
+        Arrays.sort(score);
+        
+        for(i = 0; i < score.length / m; i++)
+        {
+            answer += score[score.length - tmp] * m;
+            tmp += m;
+        }
+        return answer;
+    }
+}
+
+
+
+//다른사람 코드
+//내림차순으로 정렬해서 이런식으로 하고 싶었는데 내림차순 정렬이 안되서 아쉬웠다
+import java.util.*;
+
+class Solution {
+    public int solution(int k, int m, int[] score) {
+        int answer = 0;
+
+        Arrays.sort(score);
+
+        for(int i = score.length; i >= m; i -= m){
+            answer += score[i - m] * m;
+        }
+
+        return answer;
+    }
+}
