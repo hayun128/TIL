@@ -32,4 +32,4 @@ DDL
 | truncate | 공간을 포함한 모든 레코드를 삭제한다 (테이블 초기화 등) |
 | rename   | 대상 객체 이름을 변경한다                               |
 
-[코드](%E1%84%8F%E1%85%A9%E1%84%83%E1%85%B3%20d552f6edefe94180b0be9afb3018e0b2.md)
+[코드]([%E1%84%8F%E1%85%A9%E1%84%83%E1%85%B3%20d552f6edefe94180b0be9afb3018e0b2.md](https://github.com/hayun128/Today_I_Learn/blob/main/DB/SQL/%EC%BD%94%EB%93%9C.md))
